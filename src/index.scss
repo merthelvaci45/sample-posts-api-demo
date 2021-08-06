@@ -1,0 +1,43 @@
+@import "./scss/mixins";
+
+$primary: #1ccca5;
+
+body {
+  padding: 2rem 1rem;
+  font-family: "Work Sans", sans-serif;
+}
+
+* {
+  @include reset;
+
+  &::after,
+  &::before {
+    @include reset;
+  }
+}
+
+.container-fluid {
+  margin: auto;
+  width: 100%;
+  max-width: 75rem;
+  padding: 0 1rem;
+}
+
+.button {
+  border: 1px solid $primary;
+  border-radius: 0.3125rem;
+  padding: 0.5rem 1rem;
+  min-width: 2rem;
+  background-color: $primary;
+  color: #ffffff;
+
+  &:active {
+    border: 1px solid darken($primary, 8%);
+    background-color: darken($primary, 8%);
+  }
+
+  &:disabled {
+    border: 1px solid lighten($primary, 8%);
+    background-color: lighten($primary, 8%);
+  }
+}

@@ -1,0 +1,26 @@
+.AddPostForm {
+  margin: auto;
+  width: 100%;
+  max-width: 35rem;
+  padding: 1rem;
+  min-height: 10rem;
+  box-shadow: 0 0.5rem 1rem #38393829;
+  // add vendor prefixes for "box-shadow" property
+  -webkit-box-shadow: 0 0.5rem 1rem #38393829; /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow: 0 0.5rem 1rem #38393829; /* Firefox 3.5 - 3.6 */
+  border-radius: 0.3125rem;
+  border: 1px solid #38393829;
+}
+
+.FormTitle {
+  font-weight: bold;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.PostInfo {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.75rem;
+  color: rgb(109, 189, 109);
+}
